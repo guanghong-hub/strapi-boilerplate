@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "develop:backend": "npm run --prefix backend develop",
-    "develop:frontend": "wait-on http://localhost:1337/admin && npm run --prefix frontend develop",
+    "develop:backend": "npm run --prefix backend start",
+    "develop:frontend": "wait-on http://localhost:1337/admin && npm run --prefix frontend start",
     "develop": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*"
   },
   "devDependencies": {
